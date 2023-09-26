@@ -26,7 +26,7 @@ $ wget https://downloads.apache.org/kafka/3.5.1/kafka_2.12-3.5.1.tgz
 $ tar -xvf kafka_2.12-3.5.1.tgz
 
 --installing java 
-# sudo yum install java-devel
+$ sudo yum install java-devel
 
 --check java version installed on vm
 $ java -version 
