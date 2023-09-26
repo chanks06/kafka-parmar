@@ -53,8 +53,10 @@ $ bin/kafka-topics.sh --create --topic demo_test --bootstrap-server 3.138.186.18
 --start the producer 
 $ bin/kafka-console-producer.sh --topic demo_testing2 --bootstrap-server 3.138.186.180:9092
 
-Duplicate the session & enter in a new console -- \n
+Duplicate the session & enter in a new console -- 
+
 $ cd kafka_2.12-3.3.1
+
 $ bin/kafka-console-consumer.sh --topic demo_testing2 --bootstrap-server 3.138.186.180:9092
 
 
