@@ -47,4 +47,16 @@ $ bin/kafka-server-start.sh config/server.properties
 --changing host of config/server.properties to ec2 public ip address
 $ sudo nano config/server.properties
 
+-- start the topic
+$ bin/kafka-topics.sh --create --topic demo_test --bootstrap-server 3.138.186.180:9092 --replication-factor 1 --partitions 1
+
+--start the producer 
+$ bin/kafka-console-producer.sh --topic demo_testing2 --bootstrap-server 3.138.186.180:9092
+
+Duplicate the session & enter in a new console -- \n
+$ cd kafka_2.12-3.3.1
+$ bin/kafka-console-consumer.sh --topic demo_testing2 --bootstrap-server 3.138.186.180:9092
+
+
+
 
