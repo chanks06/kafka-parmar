@@ -1,6 +1,11 @@
 # kafka-parmar
 Data Engineering project outlined by Darshil Parmar 
 
+Project: 
+
+I launched an ec2 instance in AWS. I then started zookeeper and a kafka on this virtual machine. 
+Then I randomly sampled rows from a stock market csv file in python to simulate "real-time" stock data, and sent each row from the kafka producer to the consumer.  I dumped this data into a s3 bucket and created a crawler to be able to query this data with Athena. 
+
 [Stock Market Real-Time Data Analysis Using Kafka | End-To-End Data Engineering Project](https://www.youtube.com/watch?v=KerNf0NANMo)
 
 What is Kafka ? 
@@ -62,9 +67,7 @@ $ bin/kafka-console-consumer.sh --topic demo_testing2 --bootstrap-server 3.138.1
 
 #########
 
-Project: 
 
-After starting zookeeper, the kafka server, and I randomly sampled rows from a stock market csv file in python to simulate "real-time" stock data. I dumped this data into an s3 bucket and created a crawler to be able to query this data with Athena. 
 
 
 
