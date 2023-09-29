@@ -60,5 +60,14 @@ $ cd kafka_2.12-3.3.1
 $ bin/kafka-console-consumer.sh --topic demo_testing2 --bootstrap-server 3.138.186.180:9092
 
 
+#########
+
+Project: 
+
+After starting zookeeper, the kafka server, and I randomly sampled rows from a stock market csv file in python to simulate "real-time" stock data. I dumped this data into an s3 bucket and created a crawler to be able to query this data with Athena. 
+
+
+
+
 
 
